@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int N,a;
+	cin>>N;
+	while(N>0)
+	{
+		a=N%10;
+		cout<<a;
+		N=N/10;
+	}
+	
+	return 0;
+}
