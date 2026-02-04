@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int F_min,F_max,step;
+	cin>>F_min>>F_max>>step;
+	for(int F=F_min;F<=F_max;F+=step)
+	{
+		int C = (5.0/9)*(F-32);
+		cout<<F<<" "<<C<<endl;
+	}
+	return 0;
+}
