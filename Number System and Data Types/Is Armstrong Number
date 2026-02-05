@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    int t = n;
+    int c = 0;
+    while (t > 0) {
+        t /= 10;
+        c++;
+    }
+
+    t = n;
+    int s = 0;
+    while (t > 0) {
+        int d = t % 10;
+        s += pow(d, c);
+        t /= 10;
+    }
+
+    if (s == n) {
+        cout << "true" << endl;
+    } else {
+        cout << "false" << endl;
+    }
+
+    return 0;
+}
